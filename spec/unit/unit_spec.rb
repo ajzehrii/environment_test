@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
   subject do
-    described_class.new(title: 'harry potter',author: 'jk rowling',price: 10,published_date: '4-23-2001')
+    described_class.new(title: 'harry potter',author: 'jk rowling',price: 10,published_date: '2007-7-21'.to_time)
   end
 
   it 'is not valid without a name' do
